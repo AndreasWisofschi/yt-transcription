@@ -14,7 +14,7 @@ if (!match) {
   return;
 }
 var url = regexp.exec(document.body.innerHTML)[1];
-open("/addwebpagehere?url=" + encodeURIComponent(url));
+open("https://yt-transcription.herokuapp.com/?url=" + encodeURIComponent(url));
 EOF;
 
 $code = encodeURIComponent($code);
